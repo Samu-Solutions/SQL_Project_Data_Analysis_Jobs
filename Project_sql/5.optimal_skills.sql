@@ -7,8 +7,8 @@ offering strategic insights for career development in data analysis
 */
 
     SELECT
-        skills_dim.skill_id AS sklz_id,
-        skills_dim.skills AS sklz,
+        skills_dim.skill_id AS "Skill ID",
+        skills_dim.skills AS Skills,
         COUNT(skills_job_dim.job_id) AS demand_count,
         ROUND(AVG(job_postings_fact.salary_year_avg),0) AS avg_salary
     FROM 
